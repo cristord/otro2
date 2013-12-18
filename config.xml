@@ -23,6 +23,6 @@
     <preference name="stay-in-webview" value="false" />
     <preference name="exit-on-suspend" value="false" />
     
-    <gap:plugin name="com.phonegap.plugins.childbrowser" />
+    <access uri="*" subdomains="true" />
 
 </widget>
