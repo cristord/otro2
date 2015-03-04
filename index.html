@@ -1,222 +1,68 @@
-<!DOCTYPE html> 
-<html> 
-	<head>
-	<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
-	<title>Ministerios Aquiles Azar</title> 
-	
-	<meta name="viewport" content="width=device-width, initial-scale=1"> 
-		<link rel="stylesheet" href="themes/maa.min.css" />
-		<link rel="stylesheet" href="themes/jquery.mobile.icons.min.css" />
-		<link rel="stylesheet" href="themes/jquery.mobile.structure-1.4.0-rc.1.min.css" />
-	<link rel="stylesheet" href="themes/jqm-docs.css"/>
-		<script src="themes/jquery-1.10.2.min.js"></script>
+﻿<html ng-app="ionicApp">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="initial-scale=1, maximum-scale=1, user-scalable=no, width=device-width">
 
-		<script src="themes/jquery.mobile-1.4.0-rc.1.min.js"></script>
-		<script src="logica.js"></script>
+    <title>Side Menus</title>
+    <script src="cordova.js"></script>
+    <link href="css/index.css" rel="stylesheet" />
+    <link href="css/ionic.css" rel="stylesheet" />
+    <script src="scripts/ionic.bundle.js"></script>  
+    <script src="scripts/app/app.js"></script>
+
 </head>
 
-<body> 
-
-<!-- Start of first page -->
-<div data-role="page" id="foo" class="type-interior" data-title="Ministerios Aquiles Azar" data-theme="a">
-
-	<div data-role="header" data-theme="a" style="background-image: linear-gradient(#0FC565, #009245);">
-		<h1>Ministerios Aquiles Azar</h1>
-	</div><!-- /header -->
-
-	<div data-role="content" class="ui-content" role="main"  data-theme="a">	
-		<div class="content-primary">
-			<div id="principal"></div>
-			<div id="div-home" style="display:none;">
-				<center><img width="100%" src="themes/maa.jpg" /></center>
-<p>Ministerios Aquiles Azar y su iglesia local: El Centro de Fe, Sanidad y Avivamiento, tienen más de 20 años causando impacto en toda República Dominicana, Centro América, Sudamérica y todo el Caribe con reuniones masivas y cruzadas. Estas cruzadas son reconocidas por la manifestación del poder de Dios, donde miles de personas son libertadas, sanadas y reciben salvación a través de la palabra de Fe que predicamos.<br><br>
- 
-El Ministerio tiene su sede principal en la iglesia local "Centro de Fe" que está ubicada en la Avenida Charles Sumner N° 56 sector Los Prados, en la ciudad de Santo Domingo en la República Dominicana. La iglesia está compuesta por un grupo de más de 2,000 personas activas, alcanzadas en todas las actividades y grupo de alcance, siendo una sólida estructura, que en lo ministerial, opera bajo el modelo de Jesús, haciendo discípulos y trabajando con redes a través de las cuales las multitudes son pastoreadas.<br><br>
- 
-El propósito principal del ministerio es difundir la fama del Señor Jesucristo a través de los medios de comunicación, cruzadas y actividades especiales en las que miles de persona son alcanzada para Cristo para luego ser pastoreadas por el pastor de los pastores nuestro Señor Jesucristo.<br><br>
- 
-La visión de la iglesia es: Que todos sean salvos y hechos discípulos de nuestro Señor Jesucristo, llenos de la palabra de Fe, para alcanzar toda la Republica Dominicana y el mundo para Cristo.</p>
-				<a target="_blank" rel="external" href="http://www.aquilesazar.org/#!nosotros/cjg9" data-role="button" data-icon="info">Saber más</a>
-			</div>
-
-			<div id="div-oracion" style="display:none;">
-
-Envianos tu pedido de oración haciendo click en el boton "Pedidos de Oración" y el Pastor junto a nuestro equipo de Intercesores oraran por tus peticiones.
-<br>
-				<a data-icon="cloud" target="_blank" rel="external" href="http://www.jotform.co/ministeriosaquilesazar/oraciones" data-role="button">Pedir Oración</a>
-
-			</div>
-
-			<div id="div-productos" style="display:none;">
-
-				Visita nuestra tienda online y adquiere los productos de tu preferencia...
-				
-				<a target="_blank" rel="external" href="http://tienda.aquilesazar.org/" data-icon="shop" data-role="button">Entrar</a>
-
-
-
-			</div>
-
-			<div id="div-estudios" style="display:none;">
-
-				Visita nuestro blog y lee estudios y enseñanzas de la palabra de Dios que maximizarán tu fe en el conocimiento de la palabra...
-				
-				<a target="_blank" rel="external" href="http://blog.aquilesazar.org/" data-icon="plus" data-role="button">Entrar</a>
-
-
-
-			</div>
-
-			<div id="div-redes" style="display:none;">
-
-				<h3>Facebook</h3>
-				<p>Haz like en nuestra página de Facebook y mantente al tanto de todo el acontecer en nuestro ministerio.</p>
-
-				<a data-icon="plus" target="_blank" rel="external" href="https://www.facebook.com/ministeriosaquilesazar" data-role="button">Abrir Facebook</a>
-
-				<h3>Twitter</h3>
-				<p>Síguenos a través de nuestro Twitter y disfruta de una fresca palabra de fe.</p>
-
-				<a data-icon="plus" target="_blank" rel="external" href="https://twitter.com/aquilesazar" data-role="button">Abrir Twitter</a>
-
-
-				<h3>Instagram</h3>
-				<p>Disfruta de las fotografías de nuestro conexto familiar.</p>
-
-				<a data-icon="plus" target="_blank" rel="external" href="http://instagram.com/aquilesazar" data-role="button">Abrir Instagram</a>
-
-
-			</div>
-
-			<div id="div-ofrendar" style="display:none;">
-<center><h2 style="font-family: Georgia; font-style:italic;">
-<p>"... el que siembra escasamente, también segará escasamente; y el que siembra generosamente, generosamente también segará. Cada uno dé como propuso en su corazón: no con tristeza, ni por necesidad, porque Dios ama al dador alegre..." 2 Corintios 9:6</h2></center> <br>
- 
-<h3>Ofrenda vía Paypal o Tarjeta de Credito</h3>
-
-<a target="_blank" rel="external" href="http://siembra.aquilesazar.org/" data-role="button" data-icon="plus">Ofrendar</a>
- 
-<h3>Ofrenda vía Deposito Bancario</h3>
-Puedes ofrendar vía deposito bancario Internacional o Nacional:<br><br>
- 
- 
-<b>Depositos en el extranjero:</b><br>
-Bank of America - Miami FL.<br>
-ABA: 066007681<br>
-Cuenta N°: 1901533475<br>
-BNF: BANCO BHD, S.A<br>
-Beneficiario: CONGREGACIÓN DE FE CRISTIANA<br>
-Cuenta N°: 0125-0196926-004-9<br><br>
- 
-<b>Depositos en República Dominicana:</b><br>
-Banco BHD<br>
-Cuenta N°: 0196926-003-1 (Pesos Dominicanos)<br>
-Cuenta N°: 0196926-004-9 (Dólares)<br></p>
-
-			</div>
-
-			<div id="div-contacto" style="display:none;">
-
-				<p>
-					<b>Pastores:</b> Aquiles y Zuleyka Azar<br>
-<b>Lugar:</b> Charles Summer, No. 56, Los Prados, Sto. Dgo. - Rep. Dom.<br>
-<b>Horarios:</b> Domingos 9:00 am y  miércoles 7:15pm<br>
-<b>Contacto:</b> (809) 541-2058 Fax: (809) 541-5117<br>
-<b>Email:</b> oficinadelavision@aquilesazar.org
-				</p>
-
-				<a target="_blank" rel="external" href="tel:18095412058" data-icon="phone" data-role="button">Llámanos</a>
-
-				<a data-icon="mail" target="_blank" rel="external" href="mailto:oficinadelavision@aquilesazar.org" data-role="button">Envíanos un email</a>
-
-				<a data-icon="plus" target="_blank" rel="external" href="skype:centrodefe12?call" data-role="button">Skype</a>
-
-
-			</div>
-
-			<div id="div-links" style="display:none;">
-				<h3>AquilesAzar.org</h3>
-				<p>Encuentra todo el contenido en general de nuestro ministerio.</p>
-
-				<a data-icon="action" target="_blank" rel="external" href="http://www.aquilesazar.org/" data-role="button">AquilesAzar.org</a>	
-
-				<h3>Blog del ministerio</h3>
-				<p>Encuentra enseñanzas, devocionales y noticias de nuestro ministerio.</p>
-
-				<a data-icon="action" target="_blank" rel="external" href="http://www.aquilesazarblog.org/" data-role="button">Visitar Blog</a>
-
-				<h3>Youtube</h3>
-				<p>Descubre nuestro más recientes videos..</p>
-
-				<a data-icon="action" target="_blank" rel="external" href="http://www.youtube.com/channel/UC27oiQw2cAP6nDP9H4OZPSw" data-role="button">Ver Videos</a>			
-			</div>
-
-			<div id="div-envivo" style="display:none;">
-				<img width="100%" src="themes/vivo.jpg" />
-
-				<a target="_blank" href="http://envivo.aquilesazar.org/" data-icon="video" data-role="button">Ver transmisión</a>
-<br>
-Todos los Domingos a las 10:00 AM y Miércoles a las 8:00 PM, Hora de Santo Domingo, tenemos la transmisión en vivo de nuestro servicio de Unción y poder con el Pastor Aquiles Azar.
-
-			</div>
-
-			<div id="div-descargas" style="display:none;">
-
-				<h3>Aplicación para android</h3>
-				<p>Obtén información sobre nuestras aplicación para android disponible en Google Play...</p>
-
-				<a data-icon="carat-r" target="_blank" rel="external" href="https://play.google.com/store/apps/details?id=com.aquilesazar.app" data-role="button">Ver</a>
-
-				<h3>Extensión Google Chrome</h3>
-				<p>Instala nuestra extensión para Google Chrome y ten a mano todas las herramientas de nuestro ministerio...</p>
-
-				<a data-icon="carat-r" target="_blank" rel="external" href="https://chrome.google.com/webstore/detail/ministerios-aquiles-azar/pgbhhdkmcoedjeeohlckooegblnlgdch" data-role="button">Instalar</a>
-
-				<h3>Aplicación para Facebook</h3>
-				<p>Ten a mano todas las herramientas de nuestro ministerio en tu red social favorita..</p>
-
-				<a data-icon="carat-r" target="_blank" rel="external" href="https://apps.facebook.com/envivomaa/" data-role="button">Ver</a>
-
-			</div>
-
-		</div>
-		<div class="content-secondary">
-			<div data-role="collapsible" data-collapsed="true" data-theme="a" data-content-theme="a">
-				
-					<h3 class="opciones">Opciones</h3>
-					
-					<ul data-role="listview"  data-theme="a" data-dividertheme="a">
-
-						<li data-theme="a"><a href="#home" id="home" class="menues">Inicio</a></li>
-
-						<li data-theme="a"><a href="#ofrendar" id="ofrendar" class="menues">Ofrendar</a></li>
-
-						<li data-theme="a"><a href="#envivo" id="envivo" class="menues">En Vivo</a></li>
-
-						<li data-theme="a"><a href="#productos" id="productos" class="menues">Productos</a></li>
-
-						<li data-theme="a"><a href="#estudios" id="estudios" class="menues">Estudios</a></li>
-
-						<li data-theme="a"><a href="#redes" id="redes" class="menues">Redes Sociales</a></li>
-
-						<li data-theme="a"><a href="#oracion" id="oracion" class="menues">Pedir oración</a></li>
-
-						<li data-theme="a"><a href="#descargas" id="descargas" class="menues">Aplicaciones</a></li>
-
-						<li data-theme="a"><a href="#link" id="links" class="menues">Links</a></li>
-
-
-						<li data-theme="a"><a href="#contacto" id="contacto" class="menues">Contacto</a></li>
-				
-					</ul>
-			</div>
-		</div>
-	</div><!-- /content -->
-
-	<div data-role="footer" data-theme="a" style="background-image: linear-gradient(#0FC565, #009245);">
-		<a class="gotop" style="float:left;" href="#" data-role="button" data-iconpos="notext" data-icon="arrow-u"></a>
-		<h4>Todos los Derechos Reservados</h4>
-	</div><!-- /footer -->
-</div><!-- /page -->
+<body>
+    
+    <ion-side-menus enable-menu-with-back-views="true">
+
+        <ion-side-menu-content edge-drag-threshold="false"
+                               drag-content="false">
+            <ion-nav-bar class="bar-balanced">
+
+                <ion-nav-buttons side="left">
+                    <button class="button button-icon button-clear ion-navicon" menu-toggle="left"></button>
+                </ion-nav-buttons>
+            </ion-nav-bar>
+
+            <ion-nav-view animation="slide-left-right" name="menuContent"></ion-nav-view>
+
+            <ion-footer-bar ng-hide="$root.ocultarpie" class="bar-balanced">
+                <div ng-include="$root.milink" class="tabs-background-balanced tabs-color-light"></div>
+                <div id="unazar" ng-controller="miAzar"></div>
+            </ion-footer-bar>
+        </ion-side-menu-content>
+
+        <ion-side-menu class="dark-bg" side="left" width="210" expose-aside-when="large">
+
+            <ion-header-bar class="bar-darki bar-dark">
+                <h1 class="title">Menu</h1>
+            </ion-header-bar>
+            <ion-content class="fondo">
+                <div ng-controller="MyController">
+                    <ul class="list">
+                        <a href="#/home" ng-click='sayHello("templates/tab.html", true)' class="item item-icon-left" menu-close><i class="icon ion-home"></i>Inicio</a>
+                        <a href="#/online" ng-click='sayHello("templates/online/tab.html", true)' class="item item-icon-left" menu-close><i class="icon ion-videocamera"></i>Online</a>
+                        <a href="#/historia" ng-click='sayHello("templates/nosotros/tab.html", false)' class="item item-icon-left" menu-close><i class="icon ion-information-circled"></i>Nosotros</a>
+                        <!--<a href="#/eventos" class="item item-icon-left" menu-close><i class="icon ion-earth"></i>Eventos</a>-->
+                        <a href="#/cdfe" ng-click='sayHello("templates/cdfe/tab.html")' class="item item-icon-left" menu-close><i class="icon ion-location"></i>Iglesia</a>
+                        <!--<a href="#/ensenanzas" ng-click='sayHello("templates/ensenanzas/tab.html")' class="item item-icon-left" menu-close><i class="icon ion-chatbubble-working"></i>Enseñanzas</a>-->
+                        <!--<a href="#/frasesdefe" ng-click='sayHello("templates/frasesdefe/tab.html")' class="item item-icon-left" menu-close><i class="icon ion-quote"></i>Frases de fe</a>-->
+                        <!--<a href="#/productos" class="item item-icon-left" menu-close><i class="icon ion-bag"></i>Productos</a>
+                        <a href="#/redes" class="item item-icon-left" menu-close><i class="icon ion-share"></i>Redes sociales</a>
+                        <a href="#/galeria" class="item item-icon-left" menu-close><i class="icon ion-images"></i>Galería de fotos</a>-->
+                        <a href="#/estiempo" ng-click='sayHello("templates/tv/tab.html")' class="item item-icon-left" menu-close><i class="icon ion-monitor"></i>Televisión</a>
+                        <!--<a href="#/cursos" class="item item-icon-left" menu-close><i class="icon ion-university"></i>Cursos</a>
+                        <a href="#/oracion" class="item item-icon-left" menu-close><i class="icon ion-heart"></i>Pedir oración</a>-->
+                        <a href="#/tarjeta" ng-click='sayHello("templates/ofrendar/tab.html", false)' class="item item-icon-left" menu-close><i class="icon ion-leaf"></i>Ofrendar</a>
+                        <a href="#/contacto" ng-click='sayHello("templates/contacto/tab.html", true)' class="item item-icon-left" menu-close><i class="icon ion-iphone"></i>Contacto</a>
+                    </ul>
+                </div>
+</ion-content>
+
+        </ion-side-menu>
+
+    </ion-side-menus>
 
 </body>
+</html>

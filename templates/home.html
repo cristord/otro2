@@ -1,0 +1,17 @@
+﻿<ion-view view-title="Ministerios Aquiles Azar">
+
+    <ion-content ng-controller="FeedSlide" ng-init='getData("http://www.aquilesazar.org/apiappmaa/get_posts?post_type=slideapp&custom_fields=_my_meta_value_key27,_my_meta_value_key2,_my_meta_value_key")'>
+
+        <ion-slide-box>
+            <ion-slide ng-repeat="post in posts" ng-style="{ 'background' : post.custom_fields._my_meta_value_key27[0] }">
+                <div class="box">
+                    <div class="centralizado" style="height: 100%;">
+                        <a ng-click="openUrl(post.custom_fields._my_meta_value_key2[0]);" href="#"><img class="full-image" ng-src="{{post.thumbnail_images.full.url}}"></a>
+                    </div>
+                </div>
+            </ion-slide>
+        </ion-slide-box>
+
+    </ion-content>
+
+</ion-view>

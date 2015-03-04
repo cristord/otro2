@@ -1,0 +1,79 @@
+﻿ion-side-menu {
+    background: url('images/62233.jpg') no-repeat;
+
+    background-size: auto 100%;
+}
+
+ion-header-bar, ion-footer-bar {
+    background: url('images/circles-green77.jpg') no-repeat !important;
+    background-size: 100% auto !important;
+}
+
+.losinput {
+    border: 1px #D3D3D3 solid !important;
+    padding: 10px !important;
+    height: 50px !important;
+    line-height: inherit !important;
+}
+
+input {
+    line-height: inherit !important;
+}
+
+.tabs {
+    background: transparent !important;
+}
+
+.fondo {
+    opacity: 0.4;
+}
+
+p {
+    text-align: justify;
+}
+
+.bar-darki {
+    background-color: #0E4A18 !important;
+    background-image: linear-gradient(0deg, #0E4A18, #0E4A18 50%, transparent 50%) !important;
+}
+
+ion-footer-bar {
+    height: 50px !important;
+}
+
+.centralizado {
+  display: -webkit-box;
+    display: -moz-box;
+    display: -ms-flexbox;
+    display: -webkit-flex;
+    display: flex;
+    -webkit-box-direction: normal;
+    -moz-box-direction: normal;
+    -webkit-box-orient: horizontal;
+    -moz-box-orient: horizontal;
+    -webkit-flex-direction: row;
+    -ms-flex-direction: row;
+    flex-direction: row;
+    -webkit-flex-wrap: nowrap;
+    -ms-flex-wrap: nowrap;
+    flex-wrap: nowrap;
+    -webkit-box-pack: center;
+    -moz-box-pack: center;
+    -webkit-justify-content: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+    -webkit-align-content: stretch;
+    -ms-flex-line-pack: stretch;
+    align-content: stretch;
+    -webkit-box-align: center;
+    -moz-box-align: center;
+    -webkit-align-items: center;
+    -ms-flex-align: center;
+    align-items: center;
+}
+
+.clear {
+	clear: both;
+	width:100%;
+	height: 1px;
+}

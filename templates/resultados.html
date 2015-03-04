@@ -1,0 +1,46 @@
+﻿<ion-view view-title="Búsqueda">
+    <ion-content class="padding" ng-controller="FeedController" ng-init='getData("http://www.aquilesazar.org/apiappmaa/get_posts?post_type=post&s="+$root.busca,"busqueda",cuenta)'>
+
+        <div ng-hide="$root.hideloading" style="height: 100%; width: 100%;" class="{{$root.classe}}">
+            <center>
+                <img src="images/loading.gif" />
+                <div class="clear"></div>
+                <div ng-hide="$root.ocultarmensaje">Parece que hay problemas con la conexión a internet...</div>
+            </center>
+
+        </div>
+
+        <div ng-show="!posts.length" style="height: 100%; width: 100%;" class="centralizado">No hay resultados</div>
+
+        <div class="list">
+            <div ng-repeat="post in posts" class="item" ng-click='openpost(post.title, post.content, post.attachments[0].url, post.date, post.id, post.excerpt, post.comment_count, post.comments )'>
+
+                <div class="list card">
+
+                    <div class="item item-body">
+                        <img class="full-image" ng-src="{{post.attachments[0].url}}">
+                        <h2>{{post.title}}</h2>
+                        <p ng-bind-html="post.excerpt | to_trusted"></p>
+                    </div>
+
+                    <div class="item tabs tabs-secondary tabs-icon-left">
+                        <a class="tab-item" href="#">
+                            <i class="icon ion-chatbox"></i>
+                            {{post.comment_count}} Comentarios
+                        </a>
+
+                        <a class="tab-item" ng-click="social(post.title, post.excerpt , post.attachments[0].url , 'http://www.aquilesazar.org/?p='+post.id )">
+                            <i class="icon ion-share"></i>
+                            Compartir
+                        </a>
+                    </div>
+                </div>
+            </div>
+            <button ng-hide="$root.cargarmasboton" class="button button-block button-balanced" ng-click='getData("http://www.aquilesazar.org/apiappmaa/get_posts?post_type=post&s="+ $root.busca +"&offset="+cuenta,"busqueda",cuenta)'>
+
+                <span ng-hide="$root.cargarmasimagen">Cargando...</span>
+                <span ng-hide="$root.cargarmastexto">Cargar mas</span>
+            </button>
+        </div>
+    </ion-content>
+</ion-view>

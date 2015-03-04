@@ -1,0 +1,14 @@
+﻿<div class="tabs" ng-controller="postCtrl">
+
+    <a class="tab-item" href="#/frasesdefe">
+        <i class="icon ion-drag"></i>
+        Frases
+    </a>
+
+    <a class="tab-item" onclick="alazar('http://www.aquilesazar.org/apiappmaa/get_posts?orderby=rand&cat=202&showposts=1')">
+        <i ng-hide="$root.shufle" class="icon ion-shuffle"></i>
+        <i ng-hide="$root.loadshufle" class="icon ion-load-d"></i>
+        Al Azar
+    </a>
+
+</div>
