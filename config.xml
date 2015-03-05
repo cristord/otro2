@@ -14,7 +14,7 @@
   <vs:plugin name="nl.x-services.plugins.socialsharing" version="4.3.12" />
   <vs:plugin name="nl.x-services.plugins.socialsharing" version="4.3.12" />
   <vs:platformSpecificValues>
-    <vs:platformSpecificWidget platformName="windows" id="maapp" version="2.0.0.0">
+    <vs:platformSpecificWidget platformName="windows" id="maapp" version="2.1.2.0">
       <vs:name>Ministerios Aquiles Azar</vs:name>
     </vs:platformSpecificWidget>
   </vs:platformSpecificValues>
