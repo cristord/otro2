@@ -238,7 +238,7 @@ app.config(function ($stateProvider, $urlRouterProvider) {
                 }
             })
 
-    $urlRouterProvider.otherwise("/home");
+    $urlRouterProvider.otherwise("/ensenanzas");
 });
 
 app.controller("buscandoCtrl", function ($rootScope, $scope, $state) {
@@ -277,7 +277,7 @@ app.controller("postCtrl", function ($scope, $http, $rootScope, $state) {
 
         if ($scope.author != '' && $scope.comment != '') {
             link = $rootScope.idpost + '&name=' + encodeURIComponent($scope.author) + '&email=app@email.com&content=' + encodeURIComponent($scope.comment);
-            $http.get('http://www.aquilesazar.org/apiappmaa/submit_comment?post_id=' + link, {})
+            $http.get('http://aquilesazar.faithory.com/apiappmaa/submit_comment?post_id=' + link, {})
                 .success(function (data) {
                     var comi = { name: $scope.author, content: $scope.comment };
                     $rootScope.comments.push(comi);
@@ -380,3 +380,5 @@ function alazar(link) {
         scope.alazar(link);
     });
 }
+
+//wv.setWebChromeClient(new WebChromeClient());
