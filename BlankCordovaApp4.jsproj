@@ -117,6 +117,7 @@
     <Content Include="fonts\ionicons.svg" />
     <Content Include="fonts\ionicons.ttf" />
     <Content Include="fonts\ionicons.woff" />
+    <Content Include="icon.png" />
     <Content Include="images\1075674_616327111734276_730015529_n.jpg" />
     <Content Include="images\1607062_738447379522248_1450188659_n.jpg" />
     <Content Include="images\1888614_734911039875882_10272260_n.png" />
