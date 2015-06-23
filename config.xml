@@ -4,7 +4,7 @@
   <description>Aplicación de los Ministerios Aquiles Azar con recursos que bendecirán tu vida al alcance de tu mano.</description>
   <author href="http://www.aquilesazar.org/" email="tecnologia@aquilesazar.org">Ministerios Aquiles Azar</author>
   <content src="index.html" />
-  <preference name="phonegap-version" value="cli-5.1.1" />
+
   <access origin="*://*" />
   <preference name="SplashScreen" value="screen" />
   <preference name="windows-target-version" value="8.0" />
