@@ -5,7 +5,7 @@
   <author href="http://www.aquilesazar.org/" email="tecnologia@aquilesazar.org">Ministerios Aquiles Azar</author>
   <content src="index.html" />
   <access origin="*://*" />
-  <preference name="SplashScreen" value="splash" />
+  <preference name="SplashScreen" value="screen" />
   <preference name="windows-target-version" value="8.0" />
   <preference name="windows-phone-target-version" value="8.1" />
   <preference name="permissions" value="none" />
@@ -20,8 +20,17 @@
   </vs:platformSpecificValues>
   <icon src="res/icon.png" />
 
+  <splash src="splash.png" />
+
   <platform name="android">
     <!-- you can use any density that exists in the Android project -->
+
+    <icon qualifier="ldpi" src=" res/icons/android/icon-36-ldpi.png" />
+    <icon qualifier="mdpi" src=" res/icons/android/icon-48-mdpi.png" />
+    <icon qualifier="hdpi" src=" res/icons/android/icon-72-hdpi.png" />
+    <icon qualifier="xhdpi" src=" res/icons/android/icon-96-xhdpi.png" />
+    
+    
     <splash src="res/screen/android/splash-land-hdpi.png" density="land-hdpi"/>
     <splash src="res/screen/android/splash-land-ldpi.png" density="land-ldpi"/>
     <splash src="res/screen/android/splash-land-mdpi.png" density="land-mdpi"/>
@@ -56,8 +65,5 @@
     <!-- images are determined by width and height. The following are supported -->
     <splash src="res/screen/windows8/splashscreen.png" width="620" height="300"/>
   </platform>
-
-
-  <preference name="SplashScreenDelay" value="5000" />
   
 </widget>

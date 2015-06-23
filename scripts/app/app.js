@@ -215,7 +215,8 @@ app.config(function ($stateProvider, $urlRouterProvider) {
                 url: "/ensenanzas",
                 views: {
                     'menuContent': {
-                        templateUrl: "templates/ensenanzas/ensenanzas.html"
+                        templateUrl: "templates/ensenanzas/ensenanzas.html",
+                        controller: 'ctrlHome'
                     }
                 }
             })
@@ -239,6 +240,7 @@ app.config(function ($stateProvider, $urlRouterProvider) {
             })
 
     $urlRouterProvider.otherwise("/ensenanzas");
+    //$rootScope.ocultarpie = true;
 });
 
 app.controller("buscandoCtrl", function ($rootScope, $scope, $state) {
