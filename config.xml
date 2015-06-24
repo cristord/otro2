@@ -5,12 +5,11 @@
   <author href="http://www.aquilesazar.org/" email="tecnologia@aquilesazar.org">Ministerios Aquiles Azar</author>
   <content src="index.html" />
 
-  <access origin="*://*" />
+  <access origin="*" />
   <preference name="SplashScreen" value="screen" />
   <preference name="windows-target-version" value="8.0" />
   <preference name="windows-phone-target-version" value="8.1" />
-  <preference name="permissions" value="none" />
-  <feature name="http://api.phonegap.com/1.0/network"/>
+
   
   <vs:plugin name="cordova-plugin-inappbrowser" version="1.0.2-dev" />
   <vs:platformSpecificValues>
