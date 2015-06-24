@@ -11,9 +11,7 @@
   <preference name="windows-phone-target-version" value="8.1" />
   <preference name="permissions" value="none" />
   <feature name="http://api.phonegap.com/1.0/network"/>
-  <feature name="http://api.phonegap.com/1.0/notification"/>
-
-
+  
   <vs:plugin name="cordova-plugin-inappbrowser" version="1.0.2-dev" />
   <vs:platformSpecificValues>
     <vs:platformSpecificWidget platformName="windows" id="maapp" version="2.5.67.0">
