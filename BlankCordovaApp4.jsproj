@@ -237,7 +237,10 @@
     <Content Include="plugins\nl.x-services.plugins.socialsharing\src\android\nl\xservices\plugins\SocialSharing.java" />
     <Content Include="plugins\nl.x-services.plugins.socialsharing\src\ios\SocialSharing.h" />
     <Content Include="plugins\nl.x-services.plugins.socialsharing\src\ios\SocialSharing.m" />
+    <Content Include="plugins\nl.x-services.plugins.socialsharing\src\windows\SocialSharingProxy.js" />
     <Content Include="plugins\nl.x-services.plugins.socialsharing\src\wp8\SocialSharing.cs" />
+    <Content Include="plugins\nl.x-services.plugins.socialsharing\tests\plugin.xml" />
+    <Content Include="plugins\nl.x-services.plugins.socialsharing\tests\tests.js" />
     <Content Include="plugins\nl.x-services.plugins.socialsharing\www\SocialSharing.js" />
     <Content Include="plugins\org.apache.cordova.splashscreen\.fetch.json" />
     <Content Include="plugins\org.apache.cordova.splashscreen\CONTRIBUTING.md" />
