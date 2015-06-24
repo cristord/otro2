@@ -5,7 +5,7 @@
   <author href="http://www.aquilesazar.org/" email="tecnologia@aquilesazar.org">Ministerios Aquiles Azar</author>
   <content src="index.html" />
   <access origin="*" />
-  <preference name="phonegap-version" value="5.1.1" />
+  <preference name="phonegap-version" value="3.7.0" />
   <preference name="SplashScreen" value="screen" />
   <preference name="SplashScreenDelay" value="10000" />
   <preference name="windows-target-version" value="8.0" />
