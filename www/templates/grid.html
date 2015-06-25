@@ -1,14 +1,14 @@
 ﻿<ion-view view-title="Ministerios Aquiles Azar">
-    <ion-content style="background-color: #2A4922;">
+    <ion-content style="background-color: #2A4922;" ng-controller="MyController">
         <div class="row" style="padding: 0px;">
             <div style="padding: 0px;" class="col col-50">
-                <a style="letter-spacing: 0.06em; color: #F2f2f2; min-height: 110px; border-color: #528C44; background-color: #427336; border-width: 3px; margin-top: 0px; margin-bottom: 0px;" class="button button-block button-positive" href="#/online">
+                <a href="#/online" ng-click='sayHello("templates/online/tab.html", true)' style="letter-spacing: 0.06em; color: #F2f2f2; min-height: 110px; border-color: #528C44; background-color: #427336; border-width: 3px; margin-top: 0px; margin-bottom: 0px;" class="button button-block button-positive">
                     <i class="icon ion-videocamera larger"></i><br>
                     Online
-                </a>              
+                </a>
             </div>
             <div style="padding: 0px;" class="col col-50">
-                <a style="letter-spacing: 0.06em; color: #F2f2f2; min-height: 110px; border-color: #528C44; background-color: #427336; border-width: 3px; margin-top: 0px; margin-bottom: 0px;" class="button button-block button-positive" href="#/historia">
+                <a href="#/historia" ng-click='sayHello("templates/nosotros/tab.html", false)' style="letter-spacing: 0.06em; color: #F2f2f2; min-height: 110px; border-color: #528C44; background-color: #427336; border-width: 3px; margin-top: 0px; margin-bottom: 0px;" class="button button-block button-positive">
                     <i class="icon ion-information-circled larger"></i><br>
                     Nosotros
                 </a>
@@ -16,13 +16,13 @@
         </div>
         <div class="row" style="padding: 0px;">
             <div style="padding: 0px;" class="col col-50">
-                <a style="letter-spacing: 0.06em; color: #F2f2f2; min-height: 110px; border-color: #528C44; background-color: #427336; border-width: 3px; margin-top: 0px; margin-bottom: 0px;" class="button button-block button-positive" href="#/cdfe">
+                <a ng-click='sayHello("templates/cdfe/tab.html")' style="letter-spacing: 0.06em; color: #F2f2f2; min-height: 110px; border-color: #528C44; background-color: #427336; border-width: 3px; margin-top: 0px; margin-bottom: 0px;" class="button button-block button-positive" href="#/cdfe">
                     <i class="icon ion-location larger"></i><br>
                     Iglesia
                 </a>
             </div>
             <div style="padding: 0px;" class="col col-50">
-                <a style="letter-spacing: 0.06em; color: #F2f2f2; min-height: 110px; border-color: #528C44; background-color: #427336; border-width: 3px; margin-top: 0px; margin-bottom: 0px;" class="button button-block button-positive" href="#/ensenanzas">
+                <a ng-click='sayHello("templates/ensenanzas/tab.html")' style="letter-spacing: 0.06em; color: #F2f2f2; min-height: 110px; border-color: #528C44; background-color: #427336; border-width: 3px; margin-top: 0px; margin-bottom: 0px;" class="button button-block button-positive" href="#/ensenanzas">
                     <i class="icon ion-chatbubble-working larger"></i><br>
                     Enseñanzas
                 </a>
@@ -32,13 +32,13 @@
 
         <div class="row" style="padding: 0px;">
             <div style="padding: 0px;" class="col col-50">
-                <a style="letter-spacing: 0.06em; color: #F2f2f2; min-height: 110px; border-color: #528C44; background-color: #427336; border-width: 3px; margin-top: 0px; margin-bottom: 0px;" class="button button-block button-positive" href="#/estiempo">
+                <a ng-click='sayHello("templates/tv/tab.html")' style="letter-spacing: 0.06em; color: #F2f2f2; min-height: 110px; border-color: #528C44; background-color: #427336; border-width: 3px; margin-top: 0px; margin-bottom: 0px;" class="button button-block button-positive" href="#/estiempo">
                     <i class="icon ion-monitor larger"></i><br>
                     Television
                 </a>
             </div>
             <div style="padding: 0px;" class="col col-50">
-                <a style="letter-spacing: 0.06em; color: #F2f2f2; min-height: 110px; border-color: #528C44; background-color: #427336; border-width: 3px; margin-top: 0px; margin-bottom: 0px;" class="button button-block button-positive" href="#/contacto">
+                <a ng-click='sayHello("templates/contacto/tab.html", true)' style="letter-spacing: 0.06em; color: #F2f2f2; min-height: 110px; border-color: #528C44; background-color: #427336; border-width: 3px; margin-top: 0px; margin-bottom: 0px;" class="button button-block button-positive" href="#/contacto">
                     <i class="icon ion-iphone larger"></i><br>
                     Contacto
                 </a>
@@ -48,7 +48,7 @@
         <div class="row" style="padding: 0px;">
 
             <div style="padding: 0px;" class="col col-100">
-                <a style="letter-spacing: 0.06em; color: #F2f2f2; min-height: 110px; border-color: #528C44; background-color: #589848; border-width: 3px; margin-top: 0px; margin-bottom: 0px;" class="button button-block button-positive" href="#/tarjeta">
+                <a ng-click='sayHello("templates/ofrendar/tab.html", false)' style="letter-spacing: 0.06em; color: #F2f2f2; min-height: 110px; border-color: #528C44; background-color: #589848; border-width: 3px; margin-top: 0px; margin-bottom: 0px;" class="button button-block button-positive" href="#/tarjeta">
                     <i class="icon ion-leaf larger"></i><br>
                     Ofrendar
                 </a>
@@ -86,11 +86,11 @@
                     </div>
 
                 </div>
-              </div>
+            </div>
 
 
 
-         </div>
+        </div>
 
         <div class="row" style="padding: 0px;">
             <div style="padding: 0px;" class="col col-50">
@@ -106,5 +106,5 @@
                 </a>
             </div>
         </div>
-</ion-content>
+    </ion-content>
 </ion-view>
