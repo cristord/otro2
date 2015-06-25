@@ -1,4 +1,19 @@
-﻿ion-side-menu {
+﻿.larger {
+    font-size: larger;
+    color: #ffffff;
+}
+
+.larger2:before {
+        font-size: 45px !important;
+      margin-top: 65px !important;
+}
+
+.larger:before {
+    font-size: 45px !important;
+      margin-top: 15px !important;
+}
+
+ion-side-menu {
     background: url('images/62233.jpg') no-repeat;
     background-color: #457838;
     background-size: auto 100%;

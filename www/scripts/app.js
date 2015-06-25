@@ -211,6 +211,16 @@ app.config(function ($stateProvider, $urlRouterProvider) {
                 }
             })
 
+            .state('grid', {
+                url: "/grid",
+                views: {
+                    'menuContent': {
+                        templateUrl: "templates/grid.html",
+                        controller: 'ctrlHome'
+                    }
+                }
+            })
+
             .state('ensenanzas', {
                 url: "/ensenanzas",
                 views: {
@@ -239,7 +249,7 @@ app.config(function ($stateProvider, $urlRouterProvider) {
                 }
             })
 
-    $urlRouterProvider.otherwise("/ensenanzas");
+    $urlRouterProvider.otherwise("/grid");
     //$rootScope.ocultarpie = true;
 });
 

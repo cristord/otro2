@@ -1,4 +1,4 @@
-﻿<ion-view view-title="Ministerios Aquiles Azar">
+﻿<ion-view view-title="Enseñanzas">
     <ion-content class="padding" ng-controller="FeedController" ng-init='getData("http://aquilesazar.faithory.com/apiappmaa/get_posts","ensenanzas",cuenta)'>
 
         <div ng-hide="$root.hideloading" style="height: 100%; width: 100%;" class="{{$root.classe}}">
@@ -27,7 +27,7 @@
                             {{post.comment_count}} Comentarios
                         </a>
 
-                        <a class="tab-item" ng-click="social(post.title, post.excerpt , post.attachments[0].url , 'http://www.aquilesazar.org/?p='+post.id )">
+                        <a style="display:none;" class="tab-item" ng-click="social(post.title, post.excerpt , post.attachments[0].url , 'http://www.aquilesazar.org/?p='+post.id )">
                             <i class="icon ion-share"></i>
                             Compartir
                         </a>
