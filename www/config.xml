@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<widget xmlns:cdv="http://cordova.apache.org/ns/1.0" id="com.aquilesazar.app" android-versionCode="2" version="2.6.0.0" xmlns:gap="http://phonegap.com/ns/1.0"
+  xmlns="http://www.w3.org/ns/widgets">
+  <name>Ministerios Aquiles Azar</name>
+  <description>Aplicación de los Ministerios Aquiles Azar con recursos que bendecirán tu vida al alcance de tu mano.</description>
+  <author href="http://www.aquilesazar.org/" email="tecnologia@aquilesazar.org">Ministerios Aquiles Azar</author>
+  <content src="index.html" />
+  <access origin="*" />
+  <preference name="phonegap-version" value="3.7.0" />
+  <preference name="SplashScreen" value="screen" />
+  <preference name="SplashScreenDelay" value="10000" />
+  <preference name="windows-target-version" value="8.0" />
+  <preference name="windows-phone-target-version" value="8.1" />
+  <preference name="permissions" value="none" />
+  <gap:plugin name="org.apache.cordova.splashscreen" version="0.3.3" />
+  <gap:plugin name="nl.x-services.plugins.socialsharing" version="4.3.19-dev" />
+  <gap:plugin name="org.apache.cordova.network-information" version="0.2.12" />
+  <gap:plugin name="org.apache.cordova.inappbrowser" version="0.5.2" />
+  <gap:platformSpecificValues>
+    <gap:platformSpecificWidget platformName="windows" id="maapp" version="2.3.0.0">
+      <gap:name>Ministerios Aquiles Azar</gap:name>
+    </gap:platformSpecificWidget>
+  </gap:platformSpecificValues>
+</widget>
