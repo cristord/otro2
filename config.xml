@@ -13,6 +13,8 @@
   <preference name="permissions" value="none" />
   <vs:plugin name="org.apache.cordova.splashscreen" version="0.3.3" />
   <vs:plugin name="nl.x-services.plugins.socialsharing" version="4.3.19-dev" />
+  <vs:plugin name="org.apache.cordova.network-information" version="0.2.12" />
+  <vs:plugin name="org.apache.cordova.inappbrowser" version="0.5.2" />
   <vs:platformSpecificValues>
     <vs:platformSpecificWidget platformName="windows" id="maapp" version="2.3.0.0">
       <vs:name>Ministerios Aquiles Azar</vs:name>
