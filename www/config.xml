@@ -9,13 +9,13 @@
   <preference name="windows-target-version" value="8.0" />
   <preference name="windows-phone-target-version" value="8.1" />
   <preference name="permissions" value="none" />
-  <vs:plugin name="org.apache.cordova.splashscreen" version="0.3.3" />
-  <vs:plugin name="nl.x-services.plugins.socialsharing" version="4.3.19-dev" />
-  <vs:plugin name="org.apache.cordova.network-information" version="0.2.12" />
-  <vs:plugin name="org.apache.cordova.inappbrowser" version="0.5.2" />
-  <vs:platformSpecificValues>
-    <vs:platformSpecificWidget platformName="windows" id="maapp" version="2.3.0.0">
-      <vs:name>Ministerios Aquiles Azar</vs:name>
-    </vs:platformSpecificWidget>
-  </vs:platformSpecificValues>
+  <gap:plugin name="org.apache.cordova.splashscreen" version="0.3.3" />
+  <gap:plugin name="nl.x-services.plugins.socialsharing" version="4.3.19-dev" />
+  <gap:plugin name="org.apache.cordova.network-information" version="0.2.12" />
+  <gap:plugin name="org.apache.cordova.inappbrowser" version="0.5.2" />
+  <gap:platformSpecificValues>
+    <gap:platformSpecificWidget platformName="windows" id="maapp" version="2.3.0.0">
+      <gap:name>Ministerios Aquiles Azar</gap:name>
+    </gap:platformSpecificWidget>
+  </gap:platformSpecificValues>
 </widget>
