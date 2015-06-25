@@ -1,6 +1,6 @@
 ﻿<ion-view view-title="Ministerios Aquiles Azar">
-    <ion-content style="background-color: #2A4922;" ng-controller="MyController">
-        <div class="row" style="padding: 0px;">
+    <ion-content id="mycontentview" style="background-color: #2A4922;" ng-controller="MyController">
+        <div id="mygrid" class="row" style="padding: 0px;">
             <div style="padding: 0px;" class="col col-50">
                 <a href="#/online" ng-click='sayHello("templates/online/tab.html", true)' style="letter-spacing: 0.06em; color: #F2f2f2; min-height: 110px; border-color: #528C44; background-color: #427336; border-width: 3px; margin-top: 0px; margin-bottom: 0px;" class="button button-block button-positive">
                     <i class="icon ion-videocamera larger"></i><br>
@@ -22,7 +22,7 @@
                 </a>
             </div>
             <div style="padding: 0px;" class="col col-50">
-                <a ng-click='sayHello("templates/ensenanzas/tab.html")' style="letter-spacing: 0.06em; color: #F2f2f2; min-height: 110px; border-color: #528C44; background-color: #427336; border-width: 3px; margin-top: 0px; margin-bottom: 0px;" class="button button-block button-positive" href="#/ensenanzas">
+                <a ng-click='sayHello("templates/ensenanzas/tab.html",true)' style="letter-spacing: 0.06em; color: #F2f2f2; min-height: 110px; border-color: #528C44; background-color: #427336; border-width: 3px; margin-top: 0px; margin-bottom: 0px;" class="button button-block button-positive" href="#/ensenanzas">
                     <i class="icon ion-chatbubble-working larger"></i><br>
                     Enseñanzas
                 </a>
@@ -58,7 +58,7 @@
         <div class="row" style="padding: 0px;">
 
             <div style="padding: 0px;" class="col col-50">
-                <a style="letter-spacing: 0.06em; color: #F2f2f2; min-height: 215px; border-color: #528C44; background-color: #427336; border-width: 3px; margin-top: 0px; margin-bottom: 0px;" class="button button-block button-positive" onclick="window.open('http://www.aquilesazar.org/', '_system', 'location=yes');">
+                <a style="letter-spacing: 0.06em; color: #000; min-height: 215px; border-color: #528C44; background-color: #9DCC5B; border-width: 3px; margin-top: 0px; margin-bottom: 0px;" class="button button-block button-positive" onclick="window.open('http://www.aquilesazar.org/', '_system', 'location=yes');">
                     <i class="icon ion-earth larger2"></i><br>
                     Website
                 </a>
@@ -106,5 +106,6 @@
                 </a>
             </div>
         </div>
+
     </ion-content>
 </ion-view>

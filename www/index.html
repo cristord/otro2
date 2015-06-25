@@ -33,7 +33,7 @@
 
             <ion-nav-view animation="slide-left-right" name="menuContent"></ion-nav-view>
 
-            <ion-footer-bar ng-hide="$root.ocultarpie" class="bar-balanced">
+            <ion-footer-bar id="mitabin" ng-hide="$root.ocultarpie" class="bar-balanced">
                 <div ng-include="$root.milink" class="tabs-background-balanced tabs-color-light"></div>
                 <div id="unazar" ng-controller="miAzar"></div>
             </ion-footer-bar>
@@ -47,12 +47,12 @@
             <ion-content class="fondo">
                 <div ng-controller="MyController">
                     <ul class="list">
-                        <a href="#/grid" ng-click='sayHello("templates/tab.html", true)' class="item item-icon-left" menu-close><i class="icon ion-home"></i>Inicio</a>
+                        <a id="coneso" href="#/grid" ng-click='sayHello("templates/tab.html", true)' class="item item-icon-left" menu-close><i class="icon ion-home"></i>Inicio</a>
                         <a href="#/online" ng-click='sayHello("templates/online/tab.html", true)' class="item item-icon-left" menu-close><i class="icon ion-videocamera"></i>Online</a>
                         <a href="#/historia" ng-click='sayHello("templates/nosotros/tab.html", false)' class="item item-icon-left" menu-close><i class="icon ion-information-circled"></i>Nosotros</a>
                         <!--<a href="#/eventos" class="item item-icon-left" menu-close><i class="icon ion-earth"></i>Eventos</a>-->
                         <a href="#/cdfe" ng-click='sayHello("templates/cdfe/tab.html")' class="item item-icon-left" menu-close><i class="icon ion-location"></i>Iglesia</a>
-                        <a href="#/ensenanzas" ng-click='sayHello("templates/ensenanzas/tab.html")' class="item item-icon-left" menu-close><i class="icon ion-chatbubble-working"></i>Enseñanzas</a>
+                        <a href="#/ensenanzas" ng-click='sayHello("templates/ensenanzas/tab.html", true)' class="item item-icon-left" menu-close><i class="icon ion-chatbubble-working"></i>Enseñanzas</a>
                         <!--<a href="#/frasesdefe" ng-click='sayHello("templates/frasesdefe/tab.html")' class="item item-icon-left" menu-close><i class="icon ion-quote"></i>Frases de fe</a>-->
                         <!--<a href="#/productos" class="item item-icon-left" menu-close><i class="icon ion-bag"></i>Productos</a>
                         <a href="#/redes" class="item item-icon-left" menu-close><i class="icon ion-share"></i>Redes sociales</a>
@@ -69,6 +69,6 @@
         </ion-side-menu>
 
     </ion-side-menus>
-
+    
 </body>
 </html>
