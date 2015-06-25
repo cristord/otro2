@@ -1,4 +1,4 @@
-﻿app = angular.module('ionicApp', ['ionic'])
+﻿app = angular.module('ionicApp', ['ionic', 'ngCordova'])
     .filter('to_trusted', ['$sce', function ($sce) {
         return function (text) {
              return $sce.trustAsHtml(text);
